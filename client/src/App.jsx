@@ -1,8 +1,12 @@
 // eslint-disable-next-line no-use-before-define
 import React from "react";
 
-function App() {
-  return <h1>Hello World!</h1>;
-}
+import "./global.css";
+
+import Logon from "./pages/Logon";
+
+const App = () => {
+  return <Logon />;
+};
 
 export default App;

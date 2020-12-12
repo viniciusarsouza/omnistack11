@@ -1,5 +1,7 @@
 // eslint-disable-next-line no-use-before-define
 import React from "react";
+import { FiLogIn } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 import Container from "./styles";
 
@@ -15,7 +17,14 @@ const Logon = () => {
           <h1>Faça seu Logon</h1>
 
           <input placeholder="Sua ID" />
-          <button type="submit" />
+          <button className="button" type="submit">
+            Entrar
+          </button>
+
+          <Link to="/register">
+            <FiLogIn size={16} color="#E02041" />
+            Não tenho cadastro
+          </Link>
         </form>
       </section>
       <img src={heroesImg} alt="Heroes" />

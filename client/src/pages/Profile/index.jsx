@@ -13,6 +13,7 @@ const Profile = () => {
   const [incidents, setIncidents] = useState([]);
 
   const history = useHistory();
+
   const ongId = localStorage.getItem("ongId");
   const ongName = localStorage.getItem("ongName");
 
@@ -71,7 +72,7 @@ const Profile = () => {
             <p>{incident.title}</p>
 
             <strong>DESCRICAO:</strong>
-            <p>{incidents.description}</p>
+            <p>{incident.description}</p>
 
             <strong>VALOR:</strong>
             <p>

@@ -30,7 +30,7 @@ const NewIncident = () => {
     try {
       await api.post("incidents", data, {
         headers: {
-          Authorizantion: ongId,
+          Authorization: ongId,
         },
       });
 

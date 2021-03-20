@@ -22,7 +22,6 @@ const Register = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
 
-    // eslint-disable-next-line no-unused-vars
     const data = {
       name,
       email,
